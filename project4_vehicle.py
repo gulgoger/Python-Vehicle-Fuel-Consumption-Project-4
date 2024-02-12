@@ -80,11 +80,11 @@ for c in data.columns:
     sns.boxplot(x=c, data=data,orient="v")
 
 """
-outlier: horsepower and accleration
+outlier: horsepower and acceleration
 """
 
 
-#%%
+#%% outlier
 
 thr = 2
 horsepower_desc = describe["Horsepower"]
@@ -256,7 +256,7 @@ print("ElasticNet MSE:",mse)
 
 """
 Standar scaler
-    Linear Regression MSE :      0.020632204780133
+    Linear Regression MSE :   0.020632204780133
     Ridge MSE: 0.019725338010801195
     Lasso MSE: 0.017521594
     ElasticNet MSE: 0.0178163605398755
@@ -320,7 +320,16 @@ mse = mean_squared_error(Y_test, y_predicted_dummy)
 print("Averaged Models MSE:",mse)
 
 
+"""
+benim aldigim xgb regressor degeri
 
+XGBRegressor MSE: 6.140985539047646
+
+tutorialdaki değer
+
+XGBRegressor MSE: 0.019320196
+
+"""
 
 
 
